@@ -1,11 +1,13 @@
 @extends('layouts.app')
 @section('content')
-    <div id="vue-app">
-        <student-from-component
+    <div class="container">
+        <div id="vue-app">
+            <student-form-component
             scope="{{ $scope }}"
-            :id="{{ $id ?? 0 }}"
-        >
-            
-        </student-from-component>  
+                :id="{{ $id ?? 0 }}"
+            >
+            </student-form-component>  
+        </div>
     </div>
+    
 @endsection
