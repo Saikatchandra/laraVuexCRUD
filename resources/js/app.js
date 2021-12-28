@@ -14,7 +14,7 @@ require('./bootstrap');
 window.Vue = require('vue').default;
 
 
-// Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('student-form-component', require('./components/Student/StudentFormComponent.vue').default);
 
 
@@ -27,14 +27,10 @@ Vue.component('student-form-component', require('./components/Student/StudentFor
 import Vue from 'vue';
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
-// import App from './App.vue';
+
 
 Vue.use(ElementUI);
 
-// new Vue({
-//   el: '#vue-app',
-//   render: h => h(App)
-// });
 const app = new Vue({
         el: '#vue-app',
     });
