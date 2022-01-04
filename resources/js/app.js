@@ -10,6 +10,7 @@ require('./bootstrap');
 // import 'element-plus/dist/index.css'
 // // import App from './App.vue'
 
+import {store} from './store/store.js';
 
 window.Vue = require('vue').default;
 
@@ -32,5 +33,6 @@ import 'element-ui/lib/theme-chalk/index.css';
 Vue.use(ElementUI);
 
 const app = new Vue({
+    store,
         el: '#vue-app',
     });
